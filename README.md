@@ -13,7 +13,7 @@
   - **DH_GENERATOR**: The Diffie-Hellman generator value. This is usually 2.
 
 
-## dhparms/DH_PRIME
+## dhparams/DH_PRIME
 
 Regarding the dhparams, which is needed to be uploaded to IB portal, and is required for the **DH_PRIME** above, see this issue [here](https://github.com/sharkeyboy/ib_python/issues/1), but in brief, creating the dhparams.pem, on my mac anyway, didn't output a file, like I expected, instead the content of that file was output to the console:
 
