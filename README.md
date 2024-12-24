@@ -32,7 +32,21 @@ A6OdtX97e2kgrmFtIPPV8dmoAci0xgj3OwIBAg==
 -----END DH PARAMETERS-----
 `
 
-I copied the `-----BEGIN ... END DH PARAMETERS-----` and saved in a file called `dhparams_mark.pem`
+I copied the `-----BEGIN ... END DH PARAMETERS-----`:
+
+`-----BEGIN DH PARAMETERS-----
+MIIBCAKCAQEA+md1nRbqgcqfPyqhGzTNQSx8ZaBVA892kRhCMbLysKurOg0uzTHX
+gY0+w2vr9+es7N78twOQ1ESBXc+AG1ucxc+KtsBDAz8Aydn+ZDtFb+yIgWw0tEzD
+1BniL9lyHCckyRm4SUtCSjkACov7/kAmqRtxgGU8B+Yh5zFK6ZlPQgDesFPszXGD
+/KSrSAnEvw1SVS/gpSHMU/QeqW5JHf3RSFs1JX3A1rTej+yHTVRZFYk/rzO4A+Kt
+lzNyXB9RYPsTyUpphozTP7Gszzzo3faZSD+2JxryyczXKKuPSlAb18jjyQwHibyf
+A6OdtX97e2kgrmFtIPPV8dmoAci0xgj3OwIBAg==
+-----END DH PARAMETERS-----`
+
+(the line breaks are screwed up), it needs to look like:
+<img width="651" alt="image" src="https://github.com/user-attachments/assets/71027188-b0a5-4e3d-b7a5-a00778b90da2" />
+
+ and saved in a file called `dhparams_mark.pem`
 
 to get the **DH_PRIME** I then executed
 openssl asn1parse -in dhparam_mark.pem
