@@ -70,3 +70,6 @@ for the `DH_PRIME` value in .env.
 ## Issues with new OAuth configs
 IB does not immediately create your OAuth credentials in IB, so although everything might be setup correctly, IB can take hours or even days to synchronise the credentials you upload with their system, so if you get failures, its potentially because of this, see here for more details:
 https://www.interactivebrokers.com/campus/ibkr-api-page/cpapi-v1/#first-party-oauth
+
+>Registering a Consumer Key via the Self-Service Portal will not be valid until after the Friday/Saturday evening reset. Attempting to use the new Consumer Key prior to the reset will result in an error (you may receive a 401 Invalid Consumer error).
+
